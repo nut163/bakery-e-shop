@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budder's Bakery - Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/user.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Budder's Bakery Logo">
+        <nav id="navBar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="flavors.html">Flavors</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+    </header>
+    <main>
+        <form id="userForm" onsubmit="return validateUser()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Login">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2022 Budder's Bakery. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

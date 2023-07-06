@@ -1,1 +1,0 @@
-# bakery-e-shop
