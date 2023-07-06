@@ -1,0 +1,36 @@
+1. Sign up for a Cloudflare account at https://dash.cloudflare.com/sign-up
+2. Add your domain to Cloudflare
+   - Go to the Cloudflare dashboard
+   - Click on "Add a Site"
+   - Enter your domain name (e.g., "buudersbakery.com")
+   - Click on "Add Site"
+3. Choose a plan
+   - Select the plan that suits your needs
+   - Click on "Confirm Plan"
+4. Update your domain's nameservers to Cloudflare's nameservers
+   - Cloudflare will provide you with two nameservers
+   - Update your domain's nameservers at your domain registrar to the ones provided by Cloudflare
+5. Verify your nameservers update
+   - Go back to the Cloudflare dashboard
+   - Click on "Re-check now"
+   - Wait for the DNS propagation. It may take up to 24 hours.
+6. Enable Cloudflare's features
+   - Enable "Always Use HTTPS" to redirect all requests with scheme “http” to “https”
+   - Enable "Auto Minify" (JavaScript, CSS, HTML) to reduce the file size of source code on your website
+   - Enable "Brotli" to speed up page load times
+7. Set up Cloudflare Workers
+   - Go to the "Workers" section in the Cloudflare dashboard
+   - Click on "Create a Worker"
+   - In the script editor, you can write your server-side code. Use the code from "website_root/server/server.js"
+8. Set up Cloudflare Pages
+   - Go to the "Pages" section in the Cloudflare dashboard
+   - Click on "Create a project"
+   - Connect your GitHub account and select the repository where your website's code is located
+   - Configure your build settings. The build command is "npm run build" and the build directory is "website_root/"
+   - Click on "Save and Deploy"
+9. Set up Cloudflare KV (Key-Value) storage for user data
+   - Go to the "Workers" section in the Cloudflare dashboard
+   - Click on "KV" tab
+   - Click on "Create a Namespace"
+   - Use this for storing and retrieving user data in "website_root/server/user.js" and "website_root/server/checkout.js"
+10. Congratulations! Your website is now set up with Cloudflare.
